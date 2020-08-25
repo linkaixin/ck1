@@ -1,0 +1,168 @@
+/*头部*/
+.wrapper{position: relative;}
+.header-box{background-color: #78d595;}
+/*筛选条件*/
+.filter{width: 100%;height: .44rem;display: flex;border-bottom:1px #ececec solid;}
+.filter div{width: 100%;}
+.filter .region,.filtro{width: 100%;display: flex;align-items:center;/*由于flex-direction: column，因此align-items代表的是水平方向*/justify-content: center;/*由于flex-direction: column，因此justify-content代表的是垂直方向*/}
+.filter i{width: .01rem; height: .16rem; float: left; border-right:1px #ececec solid; margin-top: .1rem;}
+.filter div span{font-size: .14rem;}
+.filter div img{width: .13rem;margin-left: .11rem;}
+.region-list .city .cityListClass{height: auto;}
+    /*展示列表*/
+.wrapper .drugstore-list{padding-left: .1rem;padding-right: .1rem;background-color: white;}
+.drugstore-list .drug-list{display: block;width: 100%;height: auto;overflow: hidden;border-bottom: 1px #ececec dashed;padding-bottom: .2rem;}
+.drugstore-list .drug-list .drug-header{height: .44rem;line-height: .44rem;width: 100%;overflow: hidden;}
+.drug-list .drug-header b {font-size: .16rem;}
+.drug-list .drug-header i{margin-left: .1rem;margin-right: .1rem;font-size: .14rem;}
+.drug-list .drug-header span{font-size: .14rem;font-weight: normal;}
+.drug-list .drug-header .approve{color: #f6a11a;}
+.drug-list dl{width: 100%;height: .86rem;position: relative;}
+.drug-list dl dt{width: 1.38rem;height: .86rem;overflow: hidden;position: absolute;left: 0;top: 0;}
+.drug-list dt img{width: 100%;height: 100%;}
+.drug-list dl dd{width: 100%;margin-left: 1.6rem;}
+.drug-list dd .right-one{width: 100%;height: .3rem;}
+.drug-list .right-one span{padding: 0 .09rem;background: #78d595;color: white;font-size: .12rem;border-radius: .05rem;float: left;margin-right: .15rem;margin-top: .025rem}
+.drug-list .right-one span:nth-child(2n){background-color: #f6b37f;}
+.drug-list dd p{width: 100%;height: .3rem;color: #555;font-size: .14rem;line-height: .3rem;display: block;overflow: hidden;white-space: nowrap;}
+.drugstore-more{color: #999999;width: 100%;background-color: white;height: .4rem;font-size: .12rem;text-align: center;line-height: .4rem}
+/*地区*/
+.filter .region-list{width: 100%;background-color: #fff;position: absolute;top:1.6rem;height: 5.23rem;display: none;overflow: auto;font-size: .14rem;z-index:9999;overflow-x: hidden;border-top: 1px #ececec solid;}
+.region-list div{height: 100%;}
+.region-list .province{background-color: #f2f2f2;flex: 4;align-items: flex-start;}
+.region-list ul{width: 100%;}
+.region-list ul li{height: .43rem;line-height: .43rem;box-sizing: border-box;padding-left: .22rem;}
+.region-list .city{flex: 8;display: none;flex-wrap: wrap;align-items: flex-start;align-content: flex-start;justify-content: flex-start}
+.region-list .city div{height: .43rem;line-height: .43rem;box-sizing: border-box;}
+
+.region-list .city .county{background-color: #f8f8f8;width: 50%;float: left;}
+
+/*筛选*/
+.filter .back-white{background-color: #fff;}
+.filter .filtro-list{background-color: #fff;position: absolute;top:1.6rem;right: 0;width:3.4rem;height: auto;font-size: .14rem;display: none;flex-wrap: wrap;overflow: hidden;border-top: 1px #ececec solid;}
+.filtro-list div{display: block;}
+.filtro-list .nature {width: 100%;box-sizing: border-box;padding: 0 0 0 .11rem;}
+.nature .nature-header{height: .44rem;line-height: .44rem;font-size: .18rem;border-bottom: 1px #f2f2f2 dashed;}
+.nature .nature-list div{float: left;width: 1rem;height: .33rem;text-align: center;line-height: .33rem;color: #666666;background-color: #f7f7f7;border-radius: .05rem;margin-right: .11rem;margin-bottom: .11rem;margin-top: .11rem;}
+.nature .nature-list div:nth-child(3n){margin-right: 0;}
+.nature .nature-list .nature-first{color: #78d595;background-color: #e2ffeb;}
+.filtro-list .nature-button{width: 100%;}
+.nature-button button{font-size: .14rem;width: 50%;background-color: #fff;color: black;border: none;border-top: 1px solid #ececec;float: left;height: .55rem;}
+.nature-button .cancel{background-color: #78d595;color: #fff;}
+.mask{background: #000;filter: alpha(opacity=50);opacity: 0.5;position: absolute;top: 1.6rem;left: 0;width: 100%;height: 100%;z-index: 4;display:none;}
+
+/****************西药********************/
+.western-medicine-ify{width: 100%;height: auto;background-color: white;margin-bottom: .15rem;}
+.western-medicine-ify b{width: 100%;height: .45rem;border-bottom: 1px solid #ececec;line-height: .45rem;display: block;font-size: .16rem;padding-left: .1rem}
+.western-medicine-ify .icon-menzhenxiyao{font-size: .16rem;margin-right: .04rem;}
+.western-medicine-ify .medicine-ify-box{height: 2.05rem;position: relative;}
+.western-medicine-ify ul{padding: .15rem 0 0 .1rem;position: absolute;width: 100%;box-sizing:border-box;-moz-box-sizing:border-box; /* Firefox */-webkit-box-sizing:border-box; /* Safari */}
+.western-medicine-ify ul a{display: block;width: 1.2rem;height: .35rem;line-height: .32rem;text-align: center;overflow: hidden;background-color: #f8f8f8;font-size: .14rem;color: #666666;border-radius: .1rem;float: left;margin-right: .15rem;margin-bottom: .15rem;}
+.western-medicine-ify .dot-box{border-top: 1px dashed #ececec;bottom: 0;width: 100%;height: .4rem;background-color: white;text-align: center;line-height: .4rem;}
+.western-medicine-ify .dot-box span{display: inline-block;width: .065rem;height: .065rem;border-radius: 50%;border: 1px solid #78d595;margin-right: .1rem;}
+
+.swiper-pagination-bullet-active{background-color: #78d595 !important;}
+.swiper-pagination-bullet{opacity: 1;background-color: transparent;}
+
+/*内容*/
+.western-medicine-wish-header{font-size: .12rem;background-color: white;overflow: hidden;height: .44rem;width: 100%;line-height: .44rem;text-align: right;border-bottom: 1px solid #ececec;display: block;padding-right: .1rem;box-sizing:border-box;-moz-box-sizing:border-box; /* Firefox */-webkit-box-sizing:border-box; /* Safari */}
+.western-medicine-wish-header span{color: #ff6600;}
+.western-medicine-wish{width: 100%;height: auto;background-color: white;padding: 0 .1rem;overflow: hidden;box-sizing:border-box;-moz-box-sizing:border-box; /* Firefox */-webkit-box-sizing:border-box; /* Safari */}
+.western-medicine-wish a{display: block;width: 100%;height:auto;border-bottom: 1px #f2f2f2 dashed;padding-bottom:.15rem}
+.western-medicine-wish a b{width: 100%;height: .46rem;line-height: .46rem;color: #333;font-size: .16rem;overflow: hidden;display: block;}
+.western-medicine-wish a dl {width: 100%;height: .9rem;position: relative;}
+.western-medicine-wish a dt {width: 1.2rem;height: .9rem;position: absolute;left: 0;top: 0;z-index: 9;}
+.western-medicine-wish a dd {margin-left: 1.35rem;height: .9rem;}
+.western-medicine-wish dd p {position: relative;width: 100%;height: .3rem;color:#999999;font-size: .14rem;line-height: .3rem;display: block;overflow: hidden;white-space: nowrap;}
+.western-medicine-wish p i{width: .7rem;display: inline-block;text-align:right;color: #666666;}
+.western-medicine-wish p em{color: #ff6600}
+.western-medicine-wish p span{color: #78d595;position: absolute;right: 0;font-size: .12rem}
+.western-medicine-wish i em{position: absolute;left: 0;color: #666666;}
+
+/****************药品详情页*****************/
+.related-pharmacy{width: 100%;height: .45rem;position: relative;margin-top: .15rem;border-bottom: 1px solid #ececec;line-height: .45rem;display: block;font-size: .16rem;padding-left: .1rem;padding-right: .1rem;background-color: white;box-sizing:border-box;-moz-box-sizing:border-box; /* Firefox */-webkit-box-sizing:border-box; /* Safari */}
+.related-pharmacy .icon-menzhenxiyao{font-size: .16rem;margin-right: .04rem;}
+
+.drug-introduction-box .drug-introduction {width: 100%;height: .45rem;border-bottom: 1px solid #ececec;line-height: .45rem;display: block;font-size: .16rem;padding-left: .1rem;background-color: white;margin-top: .15rem}
+.drug-introduction-box .drug-introduction .icon-menzhenxiyao{font-size: .16rem;margin-right: .04rem;}
+.drug-introduction-font {position: relative;padding:.1rem;background-color: white;height: auto;box-sizing:border-box;-moz-box-sizing:border-box; /* Firefox */-webkit-box-sizing:border-box; /* Safari */}
+.drug-introduction-font p{margin-left: .7rem;font-size: .14rem;line-height: .33rem;overflow: auto}
+.drug-introduction-font p i{position: absolute;left: .1rem;color: #999999;}
+
+.related-pharmacy .drug-more{font-size: .12rem;color: #999999;position: absolute;right: .1rem}
+
+
+.drug-introduction-box .medicine-ify-box{height: 2.17rem;position: relative;background-color: white;}
+.drug-introduction-box ul{height: 100%;padding: .15rem 0 0 .1rem;position: absolute;width: 100%;background-color: white;}
+.drug-introduction-box ul a{display: block;width: 1.91rem;height:auto;overflow: hidden;float: left;margin-right: .1rem;text-align: center;font-size: .16rem;}
+.drug-introduction-box a img {height: calc(1.91rem/1.6);margin-bottom: .15rem}
+.drug-introduction-box .dot-box{width: 100%;height: .4rem;background-color: white;text-align: center;line-height: .4rem;bottom: 0}
+.drug-introduction-box .dot-box span{display: inline-block;width: .065rem;height: .065rem;border-radius: 50%;border: 1px solid #78d595;margin-right: .1rem;}
+
+.drug-direction-font {position: relative;padding:.1rem;background-color: white;height: auto;box-sizing:border-box;-moz-box-sizing:border-box; /* Firefox */-webkit-box-sizing:border-box; /* Safari */}
+.drug-direction-font p{margin-left: 1.1rem;font-size: .14rem;line-height: .33rem;overflow: auto}
+.drug-direction-font p i{position: absolute;left: .1rem;}
+
+.drug-comment-box{background-color: white}
+.drug-comment-box .drug-comment-header{color: #999999}
+.drug-comment-box dl{width: 100%;height:auto;padding: .15rem .1rem .15rem .1rem;position: relative;border-bottom: 1px #f2f2f2 dashed;box-sizing:border-box;-moz-box-sizing:border-box; /* Firefox */-webkit-box-sizing:border-box; /* Safari */}
+.drug-comment-box dt{position: absolute;left: .1rem;top: .2rem;width: .6rem;min-height: .89rem;text-align: center;overflow: hidden;}
+.drug-comment-box dt span{font-size: .14rem;}
+.drug-comment-box dt img{width: 100%;height: .6rem;border-radius: .3rem;margin-bottom: .15rem}
+.drug-comment-box dd{margin-left: .87rem}
+.drug-comment-box dd p{font-size: .14rem;line-height: .33rem;display: block;overflow: hidden;}
+.drug-comment-box p i{color: #999999;margin-left: .3rem;}
+.drug-comment-box p i:nth-child(1){margin-left:0;}
+.drug-comment-box p span{font-size: .12rem;position: absolute;right: .1rem;color: #999999;}
+
+.drug-wish-nav .layui-tab-title{border: none;}
+.drug-wish-nav .layui-tab-title .layui-this:after{border: none;}
+.drug-wish-nav .layui-tab-title{background-color: white;height: .5rem;width: 100%;line-height: .5rem;overflow: hidden;}
+.drug-wish-nav .layui-tab-title li{width: 24%;padding: 0;font-size: .14rem}
+.drug-wish-nav .layui-tab{margin: 0}
+.drug-wish-nav .layui-tab-content{padding: 0}
+.layui-tab-title .layui-this{color: #78d595;}
+
+.drug-particular{width: 100%;padding-left: .1rem;padding-right: .1rem;background-color: white;padding-bottom: .15rem;box-sizing:border-box;-moz-box-sizing:border-box; /* Firefox */-webkit-box-sizing:border-box; /* Safari */}
+.drug-particular dl img{width: 3.94rem;height: calc(3.94rem/1.6)}
+.drug-particular dt{margin-bottom: .1rem;}
+.drug-particular dd{position: relative}
+.drug-particular dd p{line-height: .33rem;width: 100%;overflow: hidden;font-size: .14rem;}
+.drug-particular dd p:nth-child(1){font-size: .16rem}
+.drug-particular p span{display: inline-block;width: 3.2rem;color: #666666;}
+.drug-particular p i{float: left}
+.drug-counsel{width: .89rem;height: .33rem;line-height: .33rem;border: 1px solid #78d595;color: #78d595;text-align: center;border-radius: .05rem;font-size: .12rem;position: absolute;top: 0;right: .1rem;margin-top: .04rem;float: left}
+.drug-particular p em{display: inline-block;text-align: center;overflow: hidden;font-size: .08rem;color: white;margin-left: .08rem;padding: .01rem .04rem}
+.drug-particular p em:nth-child(1){height: .14rem;line-height: .14rem;background-color: #78d595;border-radius: .02rem}
+.drug-particular p em:nth-child(2){height: .12rem;line-height: .12rem;background-color: #e62129;border-radius: 50%;}
+
+/*******************药品库首页*************************/
+.drug-storage{width: 100%;height: auto;padding: .1rem;background-color: white;box-sizing:border-box;-moz-box-sizing:border-box; /* Firefox */-webkit-box-sizing:border-box; /* Safari */}
+.drug-storage ul{width: 100%;}
+.drug-storage ul li{width: 25%;height: .83rem;float: left;border-right: 1px solid #f2f2f2;text-align: center;box-sizing:border-box;-moz-box-sizing:border-box; /* Firefox */-webkit-box-sizing:border-box; /* Safari */}
+.drug-storage ul li:nth-child(1){border-bottom: 1px solid #f2f2f2;}
+.drug-storage ul li:nth-child(2){border-bottom: 1px solid #f2f2f2;}
+.drug-storage ul li:nth-child(3){border-bottom: 1px solid #f2f2f2;}
+.drug-storage ul li:nth-child(4){border-bottom: 1px solid #f2f2f2;}
+.drug-storage ul li:nth-child(4n){border-right: none;}
+.drug-storage li .icon-menzhenxiyao{font-size: .36rem;color: #a9edb9;}
+.drug-storage li span{display: block;font-size: .1rem;width: 100%;overflow: hidden;margin-top: .1rem}
+
+.no-border{border: none !important;}
+.drug-storage-wish{width: 100%;height: auto;background-color: white;box-sizing:border-box;-moz-box-sizing:border-box; /* Firefox */-webkit-box-sizing:border-box; /* Safari */}
+.drug-storage-wish .drug-storage-content ul{width: 100%;background-color: white;padding-top: .15rem;padding-bottom: .15rem;}
+.drug-storage-wish .drug-storage-content li{width: 33%;height: 1.36rem;float: left;border-right: 1px dashed #f2f2f2;text-align: center;box-sizing:border-box;-moz-box-sizing:border-box; /* Firefox */-webkit-box-sizing:border-box; /* Safari */}
+.drug-storage-wish .drug-storage-content li:nth-child(1){border-bottom: 1px dashed #f2f2f2;}
+.drug-storage-wish .drug-storage-content li:nth-child(2){border-bottom: 1px dashed #f2f2f2;}
+.drug-storage-wish .drug-storage-content li:nth-child(3){border-bottom: 1px dashed #f2f2f2;}
+.drug-storage-wish .drug-storage-content li:nth-child(3n){border-right: none;}
+.drug-storage-wish .drug-storage-content img{width: 1.24rem;height: calc(1.24rem / 1.6);margin-top: .15rem}
+.drug-storage-wish .drug-storage-content span{display: block;font-size: .14rem;width: 100%;overflow: hidden;margin-top: .1rem}
+
+.drug-storage-wish .drug-storage-title{border-bottom: 1px solid #ececec;background-color: #f8f8f8;height: .5rem;width: 100%;line-height: .5rem;overflow: hidden;}
+.drug-storage-wish .drug-storage-title li{float: left;text-align: center;width: 25%;padding: 0;font-size: .14rem;box-sizing:border-box;-moz-box-sizing:border-box; /* Firefox */-webkit-box-sizing:border-box; /* Safari */}
+.drug-storage-wish .drug-storage-title .active{color: #78d595}
+.drug-storage-wish .drug-storage-content{padding-left:.1rem;padding-right: .1rem;padding-top: 0}
+
+
+
